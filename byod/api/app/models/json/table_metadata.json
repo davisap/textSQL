@@ -1,475 +1,270 @@
 {
-    "rates_all": {
-        "name": "rates_all",
-        "description": "",
+    "amazon_data": {
+        "name": "amazon_data",
+        "description": "Products purchased on Amazon",
         "columns": [
             {
-                "name": "Sex",
-                "type": "sex"
+                "name": "order_date",
+                "type": "timestamp"
             },
             {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "Place",
+                "name": "asin_isbn",
                 "type": "character"
             },
             {
-                "name": "GeogLevel",
+                "name": "item",
                 "type": "character"
             },
             {
-                "name": "Indicator",
+                "name": "total_cost",
                 "type": "character"
             },
             {
-                "name": "Year",
+                "name": "qty",
+                "type": "integer"
+            },
+            {
+                "name": "condition_description",
+                "type": "character"
+            },
+            {
+                "name": "order_status",
+                "type": "character"
+            },
+            {
+                "name": "payment_instrument",
+                "type": "character"
+            },
+            {
+                "name": "seller",
+                "type": "character"
+            },
+            {
+                "name": "buyer",
+                "type": "character"
+            },
+            {
+                "name": "shipment_date",
+                "type": "timestamp"
+            },
+            {
+                "name": "shipment_address",
+                "type": "character"
+            },
+            {
+                "name": "unspsc_code",
+                "type": "character"
+            },
+            {
+                "name": "tracking_number",
+                "type": "character"
+            },
+            {
+                "name": "category",
                 "type": "character"
             }
         ]
     },
-    "rates_census_tract_death_count": {
-        "name": "rates_census_tract_death_count",
-        "description": "",
+    "doordash": {
+        "name": "doordash",
+        "description": "Items ordered on Doordash",
         "columns": [
             {
-                "name": "Year",
-                "type": "Year"
+                "name": "ordered_on",
+                "type": "timestamp"
             },
             {
-                "name": "Numerator_total",
-                "type": "double precision"
-            },
-            {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "GeogLevel",
+                "name": "store",
                 "type": "character"
             },
             {
-                "name": "Place",
+                "name": "item",
+                "type": "character"
+            },
+            {
+                "name": "unit_price",
+                "type": "double precision"
+            },
+            {
+                "name": "qty",
+                "type": "integer"
+            },
+            {
+                "name": "subtotal",
+                "type": "double precision"
+            },
+            {
+                "name": "delivered_time",
+                "type": "timestamp"
+            },
+            {
+                "name": "delivery_address",
+                "type": "character"
+            },
+            {
+                "name": "category",
                 "type": "character"
             }
         ]
     },
-    "rates_census_tract_population": {
-        "name": "rates_census_tract_population",
-        "description": "",
+    "google_search_history": {
+        "name": "google_search_history",
+        "description": "Google search history",
         "columns": [
             {
-                "name": "Year",
-                "type": "Year"
+                "name": "search_date",
+                "type": "timestamp"
             },
             {
-                "name": "Denominator_total",
-                "type": "double precision"
-            },
-            {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "GeogLevel",
+                "name": "keyword",
                 "type": "character"
             },
             {
-                "name": "Place",
+                "name": "search_count",
+                "type": "integer"
+            }
+        ]
+    },
+    "google_visit_history": {
+        "name": "google_visit_history",
+        "description": "URLs visited on the internet",
+        "columns": [
+            {
+                "name": "last_visit",
+                "type": "timestamp"
+            },
+            {
+                "name": "title",
+                "type": "character"
+            },
+            {
+                "name": "manual_visits",
+                "type": "integer"
+            },
+            {
+                "name": "url",
+                "type": "character"
+            },
+            {
+                "name": "visit_count",
+                "type": "integer"
+            }
+        ]
+    },
+    "twitter": {
+        "name": "twitter",
+        "description": "Actions that have taken place on Twitter, such as likes, tweets or new followers.",
+        "columns": [
+            {
+                "name": "created_on",
+                "type": "timestamp"
+            },
+            {
+                "name": "entity_type",
+                "type": "character"
+            },
+            {
+                "name": "user_name",
+                "type": "character"
+            },
+            {
+                "name": "profile_image_url",
+                "type": "character"
+            },
+            {
+                "name": "associated_text",
                 "type": "character"
             }
         ]
     },
-    "rates_zip_population": {
-        "name": "rates_zip_population",
-        "description": "",
+    "uber_eats_order": {
+        "name": "uber_eats_order",
+        "description": "Items ordered on UberEats",
         "columns": [
             {
-                "name": "Year",
-                "type": "Year"
+                "name": "ordered_on",
+                "type": "timestamp"
             },
             {
-                "name": "Denominator_total",
-                "type": "double precision"
-            },
-            {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "GeogLevel",
+                "name": "order_status",
                 "type": "character"
             },
             {
-                "name": "Place",
+                "name": "city",
+                "type": "character"
+            },
+            {
+                "name": "store",
+                "type": "character"
+            },
+            {
+                "name": "item",
+                "type": "character"
+            },
+            {
+                "name": "unit_price",
+                "type": "character"
+            },
+            {
+                "name": "qty",
+                "type": "integer"
+            },
+            {
+                "name": "order_total",
+                "type": "double precision"
+            },
+            {
+                "name": "currency",
+                "type": "character"
+            },
+            {
+                "name": "delivery_address",
                 "type": "character"
             }
         ]
     },
-    "rates_census_tract_age_adjusted_rate": {
-        "name": "rates_census_tract_age_adjusted_rate",
-        "description": "",
+    "uber_trip": {
+        "name": "uber_trip",
+        "description": "Trips embarked on via Uber",
         "columns": [
             {
-                "name": "upper_confidence_interval",
-                "type": "double precision"
+                "name": "requested_on",
+                "type": "timestamp"
             },
             {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "lower_confidence_interval",
-                "type": "double precision"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "Year",
-                "type": "Year"
-            },
-            {
-                "name": "age_adjusted_rate",
-                "type": "double precision"
-            },
-            {
-                "name": "Place",
+                "name": "city",
                 "type": "character"
             },
             {
-                "name": "GeogLevel",
+                "name": "requested_from",
                 "type": "character"
-            }
-        ]
-    },
-    "rates_zip_death_count": {
-        "name": "rates_zip_death_count",
-        "description": "",
-        "columns": [
-            {
-                "name": "Year",
-                "type": "Year"
             },
             {
-                "name": "Numerator_total",
+                "name": "requested_to",
+                "type": "character"
+            },
+            {
+                "name": "fare",
                 "type": "double precision"
             },
             {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "GeogLevel",
+                "name": "currency",
                 "type": "character"
             },
             {
-                "name": "Place",
-                "type": "character"
-            }
-        ]
-    },
-    "rates_zip_age_adjusted_rate": {
-        "name": "rates_zip_age_adjusted_rate",
-        "description": "",
-        "columns": [
-            {
-                "name": "upper_confidence_interval",
+                "name": "distance",
                 "type": "double precision"
             },
             {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "lower_confidence_interval",
-                "type": "double precision"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "Year",
-                "type": "Year"
-            },
-            {
-                "name": "age_adjusted_rate",
-                "type": "double precision"
-            },
-            {
-                "name": "Place",
+                "name": "status",
                 "type": "character"
             },
             {
-                "name": "GeogLevel",
-                "type": "character"
-            }
-        ]
-    },
-    "rates_general": {
-        "name": "rates_general",
-        "description": "",
-        "columns": []
-    },
-    "rates_county_population": {
-        "name": "rates_county_population",
-        "description": "",
-        "columns": [
-            {
-                "name": "Year",
-                "type": "Year"
-            },
-            {
-                "name": "Denominator_total",
-                "type": "double precision"
-            },
-            {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "GeogLevel",
+                "name": "product",
                 "type": "character"
             },
             {
-                "name": "Place",
-                "type": "character"
-            }
-        ]
-    },
-    "rates_county_death_count": {
-        "name": "rates_county_death_count",
-        "description": "",
-        "columns": [
-            {
-                "name": "Year",
-                "type": "Year"
-            },
-            {
-                "name": "Numerator_total",
-                "type": "double precision"
-            },
-            {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "GeogLevel",
-                "type": "character"
-            },
-            {
-                "name": "Place",
-                "type": "character"
-            }
-        ]
-    },
-    "rates_county_age_adjusted_rate": {
-        "name": "rates_county_age_adjusted_rate",
-        "description": "",
-        "columns": [
-            {
-                "name": "upper_confidence_interval",
-                "type": "double precision"
-            },
-            {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "lower_confidence_interval",
-                "type": "double precision"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "Year",
-                "type": "Year"
-            },
-            {
-                "name": "age_adjusted_rate",
-                "type": "double precision"
-            },
-            {
-                "name": "Place",
-                "type": "character"
-            },
-            {
-                "name": "GeogLevel",
-                "type": "character"
-            }
-        ]
-    },
-    "rates_city_population": {
-        "name": "rates_city_population",
-        "description": "",
-        "columns": [
-            {
-                "name": "Year",
-                "type": "Year"
-            },
-            {
-                "name": "Denominator_total",
-                "type": "double precision"
-            },
-            {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "GeogLevel",
-                "type": "character"
-            },
-            {
-                "name": "Place",
-                "type": "character"
-            }
-        ]
-    },
-    "rates_city_death_count": {
-        "name": "rates_city_death_count",
-        "description": "",
-        "columns": [
-            {
-                "name": "Year",
-                "type": "Year"
-            },
-            {
-                "name": "Numerator_total",
-                "type": "double precision"
-            },
-            {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "GeogLevel",
-                "type": "character"
-            },
-            {
-                "name": "Place",
-                "type": "character"
-            }
-        ]
-    },
-    "rates_city_age_adjusted_rate": {
-        "name": "rates_city_age_adjusted_rate",
-        "description": "",
-        "columns": [
-            {
-                "name": "upper_confidence_interval",
-                "type": "double precision"
-            },
-            {
-                "name": "final_race",
-                "type": "race"
-            },
-            {
-                "name": "lower_confidence_interval",
-                "type": "double precision"
-            },
-            {
-                "name": "Sex",
-                "type": "sex"
-            },
-            {
-                "name": "Indicator",
-                "type": "mortality_reasons"
-            },
-            {
-                "name": "Year",
-                "type": "Year"
-            },
-            {
-                "name": "age_adjusted_rate",
-                "type": "double precision"
-            },
-            {
-                "name": "Place",
-                "type": "character"
-            },
-            {
-                "name": "GeogLevel",
+                "name": "category",
                 "type": "character"
             }
         ]
